@@ -1,0 +1,6 @@
+# responsible for creating my ml app as a package
+pandas
+numpy
+seaborn
+
+-e .
