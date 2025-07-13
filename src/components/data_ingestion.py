@@ -12,10 +12,10 @@ from dataclasses import dataclass #which is used to quickly create classes that 
 
 from src.components.data_transformation import DataTransformation #preproccsing of the data (handling missing values,encoding,sclaing,etc)
 from src.components.data_transformation import DataTransformationConfig #config class that holds paths like where to save preprocessor.pkl,input and output features
-'''
+
 from src.components.model_trainer import ModelTrainerConfig
 from src.components.model_trainer import ModelTrainer
-'''
+
 @dataclass # can direcly define my class varible without using __init__
 class DataIngestionConfig: #holds paths for saving the raw, train, and test datasets.
     train_data_path: str=os.path.join('artifacts',"train.csv") #all the outputs stored in artifcat folder by data ingestion
@@ -59,9 +59,9 @@ if __name__=="__main__":
 
     data_transformation=DataTransformation()
     train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
-'''
+
     modeltrainer=ModelTrainer()
-    print(modeltrainer.initiate_model_trainer(train_arr,test_arr))'''
+    print(modeltrainer.initiate_model_trainer(train_arr,test_arr))
 
 
 
