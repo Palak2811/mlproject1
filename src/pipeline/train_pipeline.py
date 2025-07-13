@@ -1,0 +1,1 @@
+# with the hekp of this trigger/call all the components folder
