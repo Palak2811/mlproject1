@@ -114,7 +114,7 @@ class DataTransformation:
                 file_path=self.data_transformation_config.preprocessor_obj_file_path,
                 obj=preprocessing_obj
 
-            ) # saving the transofrmation/preprocssing data in pkl file so that we can use it in new input data transformation
+            ) # saving the transofrmation/preprocssing function in pkl file so that we can use it in new input data transformation
 
             return (
                 train_arr,
