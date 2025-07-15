@@ -20,7 +20,7 @@ class CustomException(Exception):
         super().__init__(error_message)
         self.error_message=error_message_detail(error_message,error_detail=error_detail)
     
-    def __str__(self):
+    def __str__(self): #__str__ method automatically called to convert the exception into a string
         return self.error_message #This means that if you print the exception or log it, it will automatically show your custom error message instead of a boring default one.
 
 '''
